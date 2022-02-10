@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{476C5580-4450-4200-ADD4-C315ADE765F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Aplikasi_Perpustakaan_SMK_ANGKASA_2_MARGAHAYU.My.MyApplication</StartupObject>
+    <RootNamespace>Aplikasi_Perpustakaan_SMK_ANGKASA_2_MARGAHAYU</RootNamespace>
+    <AssemblyName>Aplikasi Perpustakaan SMK ANGKASA 2 MARGAHAYU</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Aplikasi Perpustakaan SMK ANGKASA 2 MARGAHAYU.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Aplikasi Perpustakaan SMK ANGKASA 2 MARGAHAYU.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Go Home.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudToolkitN6, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=10.8.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SQLDMO, Version=8.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.SQLDMO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class And Module\C_Common.vb" />
+    <Compile Include="Class And Module\C_Script.vb" />
+    <Compile Include="Class And Module\C_Zip.vb" />
+    <Compile Include="Class And Module\ErrorProviderExtended.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class And Module\M_Koneksi_Db.vb" />
+    <Compile Include="Database\F_DatabaseRestore.Designer.vb">
+      <DependentUpon>F_DatabaseRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database\F_DatabaseRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\F_Backup_Database.Designer.vb">
+      <DependentUpon>F_Backup_Database.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database\F_Backup_Database.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\F_Create_Database.Designer.vb">
+      <DependentUpon>F_Create_Database.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database\F_Create_Database.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster\F_Buku.Designer.vb">
+      <DependentUpon>F_Buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\F_Buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster\F_Anggota.Designer.vb">
+      <DependentUpon>F_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\F_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Grafik_Pinjam_Anggota.Designer.vb">
+      <DependentUpon>L_Grafik_Pinjam_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Grafik_Pinjam_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Peminjaman_Anggota.Designer.vb">
+      <DependentUpon>L_Peminjaman_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Peminjaman_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Grafik_Anggota.Designer.vb">
+      <DependentUpon>L_Grafik_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Grafik_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Konfirmasi_Kartu.Designer.vb">
+      <DependentUpon>L_Konfirmasi_Kartu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Konfirmasi_Kartu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Buku_Rusak.Designer.vb">
+      <DependentUpon>L_Buku_Rusak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Buku_Rusak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Grafik_Buku.Designer.vb">
+      <DependentUpon>L_Grafik_Buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Grafik_Buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Satu_Buku.Designer.vb">
+      <DependentUpon>L_Satu_Buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Satu_Buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Semua_Buku.Designer.vb">
+      <DependentUpon>L_Semua_Buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Buku\L_Semua_Buku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\L_Denda.Designer.vb">
+      <DependentUpon>L_Denda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\L_Denda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\L_Pengembalian.Designer.vb">
+      <DependentUpon>L_Pengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\L_Pengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\L_Periode.Designer.vb">
+      <DependentUpon>L_Periode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\L_Periode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Periode\Peminjaman\L_Peminjaman.Designer.vb">
+      <DependentUpon>L_Peminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Periode\Peminjaman\L_Peminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Periode\Pengembalian\L_Pengembalian.Designer.vb">
+      <DependentUpon>L_Pengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Periode\Pengembalian\L_Pengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tentang.Designer.vb">
+      <DependentUpon>Tentang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tentang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_Buku_Rusak.Designer.vb">
+      <DependentUpon>F_Buku_Rusak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_Buku_Rusak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_CariAnggota.Designer.vb">
+      <DependentUpon>F_CariAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_CariAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_CariBuku.Designer.vb">
+      <DependentUpon>F_CariBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_CariBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\F_Konfigurasi.Designer.vb">
+      <DependentUpon>F_Konfigurasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\F_Konfigurasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\F_Login.Designer.vb">
+      <DependentUpon>F_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\F_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\F_Password.Designer.vb">
+      <DependentUpon>F_Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\F_Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_Kembali.Designer.vb">
+      <DependentUpon>F_Kembali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_Kembali.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_Peminjaman.Designer.vb">
+      <DependentUpon>F_Peminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_Peminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MainMenu.Designer.vb">
+      <DependentUpon>F_MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\F_Pengembalian.Designer.vb">
+      <DependentUpon>F_Pengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\F_Pengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Kartu_Anggota.Designer.vb">
+      <DependentUpon>L_Kartu_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Kartu_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Satu_Anggota.Designer.vb">
+      <DependentUpon>L_Satu_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Satu_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Semua_Anggota.Designer.vb">
+      <DependentUpon>L_Semua_Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Anggota\L_Semua_Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\L_Peminjaman.Designer.vb">
+      <DependentUpon>L_Peminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\L_Peminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Database\F_DatabaseRestore.resx">
+      <DependentUpon>F_DatabaseRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\F_Backup_Database.resx">
+      <DependentUpon>F_Backup_Database.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database\F_Create_Database.resx">
+      <DependentUpon>F_Create_Database.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster\F_Buku.resx">
+      <DependentUpon>F_Buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster\F_Anggota.resx">
+      <DependentUpon>F_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Grafik_Pinjam_Anggota.resx">
+      <DependentUpon>L_Grafik_Pinjam_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Peminjaman_Anggota.resx">
+      <DependentUpon>L_Peminjaman_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Grafik_Anggota.resx">
+      <DependentUpon>L_Grafik_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Konfirmasi_Kartu.resx">
+      <DependentUpon>L_Konfirmasi_Kartu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Buku\L_Buku_Rusak.resx">
+      <DependentUpon>L_Buku_Rusak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Buku\L_Grafik_Buku.resx">
+      <DependentUpon>L_Grafik_Buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Buku\L_Satu_Buku.resx">
+      <DependentUpon>L_Satu_Buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Buku\L_Semua_Buku.resx">
+      <DependentUpon>L_Semua_Buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\L_Denda.resx">
+      <DependentUpon>L_Denda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\L_Pengembalian.resx">
+      <DependentUpon>L_Pengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\L_Peminjaman.resx">
+      <DependentUpon>L_Peminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\L_Periode.resx">
+      <DependentUpon>L_Periode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Periode\Peminjaman\L_Peminjaman.resx">
+      <DependentUpon>L_Peminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Periode\Pengembalian\L_Pengembalian.resx">
+      <DependentUpon>L_Pengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tentang.resx">
+      <DependentUpon>Tentang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_Buku_Rusak.resx">
+      <DependentUpon>F_Buku_Rusak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_CariAnggota.resx">
+      <DependentUpon>F_CariAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_CariBuku.resx">
+      <DependentUpon>F_CariBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\F_Konfigurasi.resx">
+      <DependentUpon>F_Konfigurasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\F_Login.resx">
+      <DependentUpon>F_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MainMenu.resx">
+      <DependentUpon>F_MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\F_Password.resx">
+      <DependentUpon>F_Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_Kembali.resx">
+      <DependentUpon>F_Kembali.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_Peminjaman.resx">
+      <DependentUpon>F_Peminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\F_Pengembalian.resx">
+      <DependentUpon>F_Pengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Kartu_Anggota.resx">
+      <DependentUpon>L_Kartu_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Satu_Anggota.resx">
+      <DependentUpon>L_Satu_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Anggota\L_Semua_Anggota.resx">
+      <DependentUpon>L_Semua_Anggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package editorspackage editors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaddressbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder Accept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard_drive_backups_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_box_red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Go Home.ico" />
+    <None Include="Resources\Calendar Multiweek.png" />
+    <None Include="Resources\282516_478724225499858_932995606_n.jpg" />
+    <None Include="Resources\symbol_help.png" />
+    <None Include="Resources\DSC00122.JPG" />
+    <None Include="Resources\Money.png" />
+    <None Include="Resources\clean1.png" />
+    <None Include="Resources\download_database1.png" />
+    <None Include="Resources\upload_database1.png" />
+    <None Include="Resources\database_1_256.png" />
+    <None Include="Resources\no_photo_female.jpg" />
+    <None Include="Resources\summer_user.png" />
+    <None Include="Resources\emblem_library.png" />
+    <None Include="Resources\Logo SMK.png" />
+    <None Include="Resources\cal.png" />
+    <None Include="Resources\Open Folder Add2.png" />
+    <None Include="Resources\Calendar Multiweek1.png" />
+    <None Include="Resources\Accept female user1.png" />
+    <None Include="Resources\Female user search.png" />
+    <None Include="Resources\Semi success.png" />
+    <None Include="Resources\kghostview.png" />
+    <None Include="Resources\Winrar SZ.png" />
+    <None Include="Resources\Print.png" />
+    <None Include="Resources\Woman.png" />
+    <None Include="Resources\Accept female user.png" />
+    <None Include="Resources\Remove female user.png" />
+    <None Include="Resources\Edit female user.png" />
+    <None Include="Resources\Add female user.png" />
+    <None Include="Resources\Add Card.png" />
+    <None Include="Resources\data_transfer.png" />
+    <None Include="Resources\old_edit_find.png" />
+    <None Include="Resources\address_book_add.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\Order1.png" />
+    <None Include="Resources\Go back.png" />
+    <None Include="Resources\Save2.png" />
+    <None Include="Resources\Addressbook remove.png" />
+    <None Include="Resources\Addressbook edit2.png" />
+    <None Include="Resources\Addressbook add1.png" />
+    <None Include="Resources\Addressbook search1.png" />
+    <None Include="Resources\upload_database.png" />
+    <None Include="Resources\new 2.png" />
+    <None Include="Resources\database11.png" />
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
